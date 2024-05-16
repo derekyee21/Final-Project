@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "Abstract.html",
+    "href": "Abstract.html",
+    "title": "Abstract",
+    "section": "",
+    "text": "This study investigates the diversity and ecological roles of Alpha-Proteobacteria in the Chase Lake Wetlands, North Dakota, focusing on their response to environmental variables. By analyzing genomic data collected from the NEON project, the research identifies key taxa within this phylum and explores their potential functions in the wetland ecosystem. Preliminary results suggest a significant correlation between microbial diversity and water quality parameters."
+  },
+  {
+    "objectID": "Index.html",
+    "href": "Index.html",
+    "title": "Index.Rmd",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "Index.html#r-markdown",
+    "href": "Index.html#r-markdown",
+    "title": "Index.Rmd",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "Index.html#including-plots",
+    "href": "Index.html#including-plots",
+    "title": "Index.Rmd",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "Results.html",
+    "href": "Results.html",
+    "title": "Results",
+    "section": "",
+    "text": "Community Composition: The results indicate a diverse community of Alpha-Proteobacteria with significant variations in community structure across different sampling points. Correlation with Environmental Variables: Preliminary analysis shows a strong correlation between the presence of specific taxa within Alpha-Proteobacteria and higher nitrogen levels in the water."
+  },
+  {
+    "objectID": "Methods.html",
+    "href": "Methods.html",
+    "title": "Methods",
+    "section": "",
+    "text": "Data Collection: Metagenomic sequencing data was obtained from the National Ecological Observatory Network (NEON), focusing on samples collected from the Chase Lake Wetlands over the spring and summer of 2024.\nAnalytical Techniques: Bioinformatic analyses were performed using QIIME 2 for microbial community analysis and R for statistical analysis, focusing on diversity indices and correlation tests between microbial presence and environmental factors."
+  },
+  {
+    "objectID": "Motivations.html",
+    "href": "Motivations.html",
+    "title": "Motivations",
+    "section": "",
+    "text": "Interest in Microbial Ecology: The motivation for this research stems from an increasing scientific interest in understanding how microbial communities influence and are influenced by wetland ecosystems. Wetlands serve crucial ecological functions, including water filtration and carbon storage, and microbes are at the heart of these processes. Environmental Impact: Studying these microorganisms helps predict the impacts of environmental changes on wetland health and informs conservation strategies. The Chase Lake Wetlands serve as an important case study due to their unique ecological characteristics and the pressures they face from agricultural runoff and climate change."
+  }
+]
