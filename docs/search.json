@@ -47,5 +47,19 @@
     "title": "Motivations",
     "section": "",
     "text": "Interest in Microbial Ecology: The motivation for this research stems from an increasing scientific interest in understanding how microbial communities influence and are influenced by wetland ecosystems. Wetlands serve crucial ecological functions, including water filtration and carbon storage, and microbes are at the heart of these processes. Environmental Impact: Studying these microorganisms helps predict the impacts of environmental changes on wetland health and informs conservation strategies. The Chase Lake Wetlands serve as an important case study due to their unique ecological characteristics and the pressures they face from agricultural runoff and climate change."
+  },
+  {
+    "objectID": "Introduction.html",
+    "href": "Introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Background on Proteobacteria: Alpha-Proteobacteria are known for their metabolic diversity and ability to adapt to various environmental niches. This class includes species crucial for nitrogen cycling, a fundamental ecological process in wetlands.\nResearch Gap: Previous studies have predominantly focused on larger organisms or the chemical aspects of wetlands. There is a lack of comprehensive microbial genomic studies in the Chase Lake Wetlands, particularly concerning the response of Alpha-Proteobacteria to environmental variables.\nStudy Objectives: This project aims to fill these gaps by mapping the diversity of Alpha-Proteobacteria and analyzing their correlation with environmental factors such as nutrient levels and water quality."
+  },
+  {
+    "objectID": "Discussion.html",
+    "href": "Discussion.html",
+    "title": "Discussion",
+    "section": "",
+    "text": "Interpretation of Results: The diversity of Alpha-Proteobacteria and their correlation with nitrogen levels suggest that these microbes play a significant role in nitrogen cycling within the wetland, potentially affecting overall ecosystem health. Implications for Wetland Management: Understanding these relationships helps predict the impacts of nutrient loading on microbial communities and can guide conservation efforts. Study Limitations: The study is limited by its reliance on a single season of data, which may not capture seasonal variations in microbial activity."
   }
 ]
