@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Final Project"
+  navbar:
+    left:
+      - href: Abstract.qmd
+        text: Abstract
+      - href: Motivations.qmd
+        text: Motivations
+      - href: Introduction.qmd
+        text: Introduction
+      - href: Methods.qmd
+        text: Methods
+      - href: Results.qmd
+        text: Results
+      - href: Discussion.qmd
+        text: Discussion
+      - href: Conclusion.qmd
+        text: Conclusion
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
+
+editor: visual
