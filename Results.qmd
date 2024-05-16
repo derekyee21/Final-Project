@@ -40,6 +40,10 @@ editor: visual
 
 ![](images/Screen%20Shot%202024-05-15%20at%2011.24.11%20AM.png)
 
-![](images/Screen Shot 2024-05-16 at 12.06.21 AM.png)
+![](images/Screen%20Shot%202024-05-16%20at%2012.06.21%20AM.png)
+
+![](images/Screen Shot 2024-04-17 at 10.17.10 AM.png)
+
+![](images/Screen Shot 2024-04-17 at 11.21.21 AM.png)
 
 Community Composition: The results indicate a diverse community of Alpha-Proteobacteria with significant variations in community structure across different sampling points. Correlation with Environmental Variables: Preliminary analysis shows a strong correlation between the presence of specific taxa within Alpha-Proteobacteria and higher nitrogen levels in the water.
