@@ -314,28 +314,12 @@ NEON_MAGs_Alphaproteobacteria <- NEON_MAGs_metagenomes_chemistry %>%
   filter(Phylum == "Alphaproteobacteria")
 ```
 
-```{r}
-# For unknown reasons the following does not like blank spaces in the names
-NEON_MAGs_metagenomes_chemistry_noblank <- NEON_MAGs_metagenomes_chemistry %>% 
-  rename("AssemblyType" = "Assembly Type") %>% 
-  rename("BinCompleteness" = "Bin Completeness") %>% 
-  rename("BinContamination" = "Bin Contamination") %>% 
-  rename("TotalNumberofBases" = "Total Number of Bases") %>% 
-  rename("EcosystemSubtype" = "Ecosystem Subtype")
-```
-
-```{r, fig.height = 50, fig.width = 30}
-ggtree(tree_Alphaproteobacteria, layout="circular", branch.length="none") %<+% 
+```{r, fig.height = 40, fig.width = 20}
+ggtree(tree_Alphaproteobacteria, layout="circular")  %<+%
   NEON_MAGs_metagenomes_chemistry + 
-  geom_point2(mapping=aes(color=`Ecosystem Subtype`, size=`Total Number of Bases`)) + 
-  new_scale_fill() + 
-  geom_fruit(
-      data=NEON_MAGs_metagenomes_chemistry_noblank,
-      geom=geom_tile,
-      mapping=aes(y=label, x=1, fill= AssemblyType),
-      offset=0.05,   # The distance between external layers, default is 0.03 times of x range of tree.
-      pwidth=0.15 # width of the external layer, default is 0.2 times of x range of tree.
-      ) 
+  geom_tiplab(size=2, hjust=-.1) +
+  xlim(0,30) +
+  geom_point(mapping=aes(color=Class))
 ```
 
 ```{r}
@@ -371,4 +355,40 @@ NEON_MAGs_bact_ind %>%
   ggplot(aes(x = `Site ID`, y = `Phylum`, color = Phylum)) +
   geom_point() +
   labs(title = "Site ID vs Number of Genes by Phylum")
+```
+
+```{r}
+NEON_MAGs <- read_csv("data/NEON/GOLD_Study_ID_Gs0161344_NEON.csv") %>% 
+  # remove columns that are not needed for data analysis
+  select(-c(`GOLD Study ID`, `Bin Methods`, `Created By`, `Date Added`)) %>% 
+  # create a new column with the Assembly Type
+  mutate("Assembly Type" = case_when(`Genome Name` == "NEON combined assembly" ~ `Genome Name`,
+                            TRUE ~ "Individual")) %>% 
+  mutate_at("Assembly Type", str_replace, "NEON combined assembly", "Combined") %>% 
+  separate(`GTDB-Tk Taxonomy Lineage`, c("Domain", "Phylum", "Class", "Order", "Family", "Genus"), "; ", remove = FALSE) %>% 
+  # Get rid of the the common string "Soil microbial communities from "
+  mutate_at("Genome Name", str_replace, "Terrestrial soil microbial communities from ", "") %>% 
+  # Use the first `-` to split the column in two
+  separate(`Genome Name`, c("Site","Sample Name"), " - ") %>% 
+  # Get rid of the the common string "S-comp-1"
+  mutate_at("Sample Name", str_replace, "-comp-1", "") %>%
+  # separate the Sample Name into Site ID and plot info
+  separate(`Sample Name`, c("Site ID","subplot.layer.date"), "_", remove = FALSE,) %>% 
+  # separate the plot info into 3 columns
+  separate(`subplot.layer.date`, c("Subplot", "Layer", "Date"), "-")
+```
+
+```{r}
+kable(
+  NEON_MAGs %>% 
+    filter(Site == "Chase Lake Wetlands, North Dakota, USA")
+)
+```
+
+```{r}
+  NEON_MAGs %>% 
+    filter(Site == "Chase Lake Wetlands, North Dakota, USA")%>%
+    ggplot(aes(x = Class))+
+    geom_bar()+
+    coord_flip()
 ```
