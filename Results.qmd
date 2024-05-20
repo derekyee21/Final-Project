@@ -423,7 +423,11 @@ The distribution of bacterial classes in the Chase Lake Wetlands is shown in thi
 
 ![](images/Screen%20Shot%202024-04-17%20at%2011.21.21%20AM.png)
 
+This individual taxonomic tree shows the taxonomic lineage from alphaproteobacteria which shows all the bacteria that evolved from it.
+
 ![](images/Screen%20Shot%202024-04-17%20at%2010.17.10%20AM.png)
+
+This combined taxonomic tree shows the taxonomic lineage of bacteria.
 
 ```{r}
 library(ggplot2)
@@ -446,3 +450,5 @@ ggplot(data, aes(x = reorder(Site, Count), y = Count)) +
   theme_minimal()
 
 ```
+
+This bar chart shows the number of alphaproteobacteria present at the Chase Lake Wetlands site.
