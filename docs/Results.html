@@ -479,6 +479,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>The distribution of soil temperatures at several NEON locations, including Chase Lake Wetlands, is shown in this boxplot. The information shows the regional variations in soil temperature.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NEON_MAGs_metagenomes_chemistry_alphaproteobacteria, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">soilTemp.x</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Ecosystem Subtype.x</span><span class="st">`</span>, <span class="at">color =</span> Class)) <span class="sc">+</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -494,6 +495,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>The link between soil temperature and Alpha-Proteobacteria ecosystem subtype is seen in this scatterplot. The map makes it easier to see which subtypes of ecosystems are linked to certain temperature ranges.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NEON_MAGs_metagenomes_chemistry_alphaproteobacteria, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">soilInCaClpH.x</span><span class="st">`</span>, <span class="at">y =</span> nlcdClass.x, <span class="at">color =</span> Class)) <span class="sc">+</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -509,6 +511,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This scatterplot shows how soil pH affects the distribution of Alpha-Proteobacteria across various land cover types by displaying the link between soil pH and the National Land Cover Database (NLCD) class.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>NEON_MAGs_metagenomes_chemistry_alphaproteobacteria <span class="sc">%&gt;%</span> </span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Total Number of Bases</span><span class="st">`</span>)) <span class="sc">+</span></span>
@@ -521,6 +524,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>The overall distribution of total bases in the Alpha-Proteobacteria genomic data is represented by this histogram, which also displays the frequency of various sequence lengths.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>NEON_MAGs_metagenomes_chemistry_alphaproteobacteria <span class="sc">%&gt;%</span>   </span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(Domain) <span class="sc">|</span> <span class="fu">is.na</span>(Phylum)<span class="sc">|</span> <span class="fu">is.na</span>(Class) <span class="sc">|</span> <span class="fu">is.na</span>(Order) <span class="sc">|</span> <span class="fu">is.na</span>(Family) <span class="sc">|</span> <span class="fu">is.na</span>(Genus)) <span class="sc">%&gt;%</span></span>
@@ -534,6 +538,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This bar graph displays the high quality (HQ) and medium quality (MQ) genomic assemblies of Alphaproteobacteria bins.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>NEON_MAGs_metagenomes_chemistry_alphaproteobacteria <span class="sc">%&gt;%</span> </span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_infreq</span>(<span class="st">`</span><span class="at">Site ID</span><span class="st">`</span>))) <span class="sc">+</span></span>
@@ -547,6 +552,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This bar plot shows the frequency of Alphaproteobacteria sequences across different NEON sites.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>NEON_MAGs_metagenomes_chemistry_alphaproteobacteria <span class="sc">%&gt;%</span> </span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Gene Count</span><span class="st">`</span>)) <span class="sc">+</span></span>
@@ -571,6 +577,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>These histograms show the distribution of gene counts and tRNA genes in the Alphaproteobacteria genomic data, illustrating the genomic complexity of these bacteria.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>NEON_MAGs_metagenomes_chemistry_alphaproteobacteria <span class="sc">%&gt;%</span>   </span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(Domain) <span class="sc">|</span> <span class="fu">is.na</span>(Phylum)<span class="sc">|</span> <span class="fu">is.na</span>(Class) <span class="sc">|</span> <span class="fu">is.na</span>(Order) <span class="sc">|</span> <span class="fu">is.na</span>(Family) <span class="sc">|</span> <span class="fu">is.na</span>(Genus)) <span class="sc">%&gt;%</span></span>
@@ -597,6 +604,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>These bar plots show the distribution of genomic assemblies by type (combined vs.&nbsp;individual) and by site ID for Alphaproteobacteria.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>NEON_MAGs_metagenomes_chemistry_alphaproteobacteria <span class="sc">%&gt;%</span>  </span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Scaffold Count</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Site.x</span><span class="st">`</span>)) <span class="sc">+</span></span>
@@ -609,6 +617,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This boxplot shows the distribution of scaffold counts (segments of DNA) across different sites and ecosystem subtypes.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NEON_MAGs_metagenomes_chemistry_alphaproteobacteria, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Depth In Meters.x</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Elevation In Meters.x</span><span class="st">`</span>, <span class="at">color =</span> Class)) <span class="sc">+</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -639,6 +648,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>These scatterplots show the relationship between depth and elevation for Alphaproteobacteria, as well as the relationship between bin completeness and contamination.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(NEON_MAGs_metagenomes_chemistry_alphaproteobacteria, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Gene Count</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Scaffold Count</span><span class="st">`</span>, <span class="at">color =</span> Class)) <span class="sc">+</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -666,6 +676,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This scatterplot and boxplot show the relationship between gene count and scaffold count for Alphaproteobacteria, indicating the genomic assembly quality.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>NEON_MAGs <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/NEON/GOLD_Study_ID_Gs0161344_NEON_2024_4_21.csv"</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># remove columns that are not needed for data analysis</span></span>
@@ -775,6 +786,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This circular phylogenetic tree represents the evolutionary relationships among Alpha-Proteobacteria, with annotations for different sites and assembly types.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>NEON_MAGs <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/NEON/GOLD_Study_ID_Gs0161344_NEON.csv"</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># remove columns that are not needed for data analysis</span></span>
@@ -830,6 +842,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>This is a scatter plot that shows how different phyla’s gene numbers are distributed across site. Every dot is a unique combination of a site and a phylum; the phylum is shown by the dot’s position on the y-axis, and the site is indicated by its position on the x-axis. The legend on the right side of the graph indicates which phyla are represented by the color of the dots.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>NEON_MAGs <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/NEON/GOLD_Study_ID_Gs0161344_NEON.csv"</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># remove columns that are not needed for data analysis</span></span>
@@ -4760,6 +4773,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div>
 <figure class="figure">
 <p><img src="Results_files/figure-html/unnamed-chunk-41-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The distribution of bacterial classes in the Chase Lake Wetlands is shown in this bar graph. The y-axis lists the different bacterial classes found in the samples, while the x-axis indicates the number of incidences for each bacterial class.</p>
+<p><img src="images/Screen Shot 2024-04-17 at 11.21.21 AM.png" class="img-fluid"></p>
+<p><img src="images/Screen Shot 2024-04-17 at 10.17.10 AM.png" class="img-fluid"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create data frame</span></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Site =</span> <span class="fu">c</span>(</span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Chase Lake Wetlands, North Dakota, USA"</span></span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">Count =</span> <span class="fu">c</span>(<span class="dv">69</span>)</span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Create bar plot</span></span>
+<span id="cb48-14"><a href="#cb48-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Site, Count), <span class="at">y =</span> Count)) <span class="sc">+</span></span>
+<span id="cb48-15"><a href="#cb48-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"skyblue"</span>) <span class="sc">+</span></span>
+<span id="cb48-16"><a href="#cb48-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb48-17"><a href="#cb48-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Count of Phylum Alphaproteobacteria at Each Site"</span>, <span class="at">x =</span> <span class="st">"Site"</span>, <span class="at">y =</span> <span class="st">"Count"</span>) <span class="sc">+</span></span>
+<span id="cb48-18"><a href="#cb48-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Results_files/figure-html/unnamed-chunk-42-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>

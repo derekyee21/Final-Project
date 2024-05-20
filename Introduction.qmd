@@ -2,10 +2,19 @@
 title: "Introduction"
 format: html
 editor: visual
+bibliography: references.bib
 ---
 
-Background on Proteobacteria: Alpha-Proteobacteria are known for their metabolic diversity and ability to adapt to various environmental niches. This class includes species crucial for nitrogen cycling, a fundamental ecological process in wetlands.
+Chase Lake Wetlands, also known as Woodworth (WOOD), is a terrestrial NEON field site located near Woodworth, North Dakota, managed by the U.S. Fish and Wildlife Service and the U.S. Geological Survey as part of the Chase Lake National Wildlife Refuge (NWR). Covering an 11 km² area, WOOD features a mix of grasslands, agricultural areas, and wetlands within the Missouri Coteau region, known for its prairie potholes formed by glacial activity. The region has a continental climate with significant temperature variations and moderate annual precipitation (330-508 mm). Winters can drop below -17.8°C, and summers can exceed 32°C. The climate is characterized by strong winds, thunderstorms, and extreme weather events, including hailstorms and tornadoes. The area has a long history of Native American presence and later European settlement. Established in 1908, Chase Lake NWR has been used for wildlife studies since 1969, focusing on the effects of grazing, burning, and cropping. The refuge aims to maintain ecosystem health and biodiversity, with a focus on research and recreation. Historical land management practices like grazing and burning are continued to promote native plant growth. The Chase Lake Wetlands are a notable region for studying various ecosystems, including microbial communities. Among these microbial communities, Alphaproteobacteria play a significant role due to their diversity and ecological functions.
 
-Research Gap: Previous studies have predominantly focused on larger organisms or the chemical aspects of wetlands. There is a lack of comprehensive microbial genomic studies in the Chase Lake Wetlands, particularly concerning the response of Alpha-Proteobacteria to environmental variables.
+[@noauthor_chase_nodate]
 
-Study Objectives: This project aims to fill these gaps by mapping the diversity of Alpha-Proteobacteria and analyzing their correlation with environmental factors such as nutrient levels and water quality.
+Alphaproteobacteria are a diverse and extensively studied group of bacteria that include a variety of phototrophs, chemolithotrophs, chemoorganotrophs, and aerobic photoheterotrophs. Taxonomically, alphaproteobacteria are classified as a class within the phylum Proteobacteria. Alphaproteobacteria make up most phototrophic genera and symbionts of plants and animals and are abundant in terrestrial and marine environments. Alphaproteobacteria are crucial in both agricultural and medical contexts due to their associations with eukaryotic organisms. For instance, members of the Rhizobiaceae family form symbiotic relationships with plant root nodules, playing a significant role in atmospheric nitrogen fixation. Other alphaproteobacteria, such as those in the Rickettsiales order, have adapted to intracellular lifestyles, acting as pathogens to humans and animals. The phylogeny of Alphaproteobacteria is complex and subject to ongoing revision, partly due to differences in genome characteristics like GC-content. Some debates exist regarding the placement of certain groups, such as Magnetococcidae, with proposals for reclassifying them into a separate class. Recent phylogenomic studies suggest that the protomitochondrial clade diverged early from the rest of the Alphaproteobacteria, indicating its unique evolutionary position.
+
+[@noauthor_alpha-proteobacteria_nodate]
+
+[@collier_cell_2016]
+
+[@sun_angiogenin_2021]
+
+[@francez-charlot_general_2015]
